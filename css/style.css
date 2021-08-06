@@ -1,0 +1,98 @@
+/* Colors */
+:root {
+  --color-blue: #0085c7;
+  --color-black: #000;
+  --color-red: #df0024;
+  --color-yellow: #f4c300;
+  --color-green: #009f3d;
+  --color-border: #202020;
+}
+
+/* Logo */
+.logo {
+  margin: 100px auto;
+  width: 800px;
+  height: 500px;
+  border: 10px solid var(--color-border);
+  position: relative;
+}
+
+/* Circle */
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  left: 130px;
+  top: 100px;
+  animation: rotates 5s infinite;
+}
+
+/* Circle Colors */
+.blue {
+  border: 12px solid var(--color-blue);
+}
+
+.black {
+  border: 12px solid var(--color-black);
+  margin-left: 190px;
+}
+
+.red {
+  border: 12px solid var(--color-red);
+  margin-left: 380px;
+}
+
+.yellow {
+  border: 12px solid var(--color-yellow);
+  margin-top: 75px;
+  margin-left: 90px;
+}
+
+.green {
+  border: 12px solid var(--color-green);
+  margin-top: 75px;
+  margin-left: 286px;
+}
+
+/* z-index */
+.z0 {
+  z-index: 0;
+}
+
+.z1 {
+  z-index: 1;
+}
+
+.z2 {
+  z-index: 2;
+}
+
+.z3 {
+  z-index: 3;
+}
+
+.z-min {
+  z-index: -1;
+}
+
+/* Animation */
+@keyframes rotates {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    transform: scale(.9);
+  }
+}
